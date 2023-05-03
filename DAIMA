@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+struct Student{
+	char student_name[18];/*学生的姓名*/
+	int student_age;/*学生的年龄*/
+	int student_score;/*学生的成绩*/
+};
+void main() {
+	struct Student student1 = {"lichan",20,650};
+	struct Student student2 = {"张三",19,600};
+	struct Student student3 = { "李四",19,590 };
+	struct Student student4 = {"理光",21,670};
+	struct Student student5 = {"雨露",20,700};
+	printf("%s\40%d\40%d", student1.student_name, student1.student_age, student1.student_score);
+	printf("\n");
+	printf("%s\40%d\40%d", student2.student_name, student2.student_age, student2.student_score);
+	printf("\n");
+	printf("%s\40%d\40%d", student3.student_name, student3.student_age, student3.student_score);
+	printf("\n");
+	printf("%s\40%d\40%d", student4.student_name, student4.student_age, student4.student_score);
+	printf("\n");
+	printf("%s\40%d\40%d", student5.student_name, student5.student_age, student5.student_score);
+	getchar();
+}
